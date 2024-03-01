@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Kisinja Blog</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/b052718160.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .menu {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <nav
+        class="w-full flex justify-between items-center bg-gray-100 pl-[8%] pr-[8%] pt-[20px] pb-[20px] sticky top-0 z-[10000] transition-all border-b-2">
+        <div>
+            <a href="index.html" class="font-bold text-xl">Kisinja Blog.</a>
+        </div>
+        <div>
+            <ul class="flex gap-3">
+                <li><a href="index.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Home</a></li>
+                <li><a href="blog.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Blog</a></li>
+                <li><a href="#" class="text-sm font-semibold hover:text-gray-300 transition-all">Shop</a></li>
+                <li><a href="#" class="text-sm font-semibold hover:text-gray-300 transition-all">Contact</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-3 items-center">
+            <img src="images/edited.jpeg" alt="profile pic" style="border-radius: 50%; width: 30px; height: 30px;"
+                class="rounded-full focus:ring cursor-pointer">
+            <p class="text-sm font-semibold cursor-pointer account">
+                Account
+            </p>
+        </div>
+        <div class="absolute right-[90px] top-[60px] w-[200px] p-3 bg-white rounded-2xl menu">
+            <ul class="flex flex-col gap-2">
+                <li>
+                    <a href="profile.html" id="menu-links"
+                        class="text-gray-500 text-sm capitalize hover:text-black">your
+                        profile</a>
+                </li>
+                <li>
+                    <a href="profile.html" id="menu-links"
+                        class="text-gray-500 text-sm capitalize hover:text-black">settings</a>
+                </li>
+                <li>
+                    <a href="profile.html" id="menu-links"
+                        class="text-gray-500 text-sm capitalize hover:text-black">logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <style>
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('images/matatu.jpg') no-repeat center center/cover;
+            height: 350px;
+        }
+
+        .inner {
+            background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url('images/matatu.jpg') no-repeat center center/cover;
+            height: 180px;
+            position: relative;
+        }
+
+        .inner div {
+            position: absolute;
+            top: 50%;
+            padding: 10px;
+        }
+
+        .line {
+            transform: translate(-50%, -50%);
+        }
+
+        .read-more {
+            transition: all .3s;
+        }
+
+        .inner-2 {
+            transform: translate(-50%, -50%);
+        }
+
+        .read-more:hover {
+            background: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .video-background {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .video-background video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .content {
+            position: absolute;
+            top: 60%;
+            left: 5px;
+            z-index: 1;
+        }
+    </style>
+
+    <section class="pl-[8%] pr-[8%] bg-gray-100 pt-[30px] pb-[30px]">
+        <div class="mt-2 w-[600px] flex gap-[180px]">
+            <div>
+                <div class="w-[600px] header relative rounded-md">
+                    <div class="text-center absolute top-[50%] left-[50%] inner-2">
+                        <h1 class="text-white font-semibold text-lg mb-3">INTO THE GRAFFITI LAND (Kenyan Roads)😎😎‼
+                        </h1>
+                        <br>
+                        <div class="line absolute top-[57%] left-[50%] w-[100px] h-[2px] bg-white rounded-[40px]"></div>
+                        <a href="blog.html"
+                            class="read-more text-center bg-transparent border-2 border-white text-white p-2">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="w-full bg-white text-center">
+                    <h1 class="text-gray-300 font-semibold uppercase text-lg p-3 mt-3">right place for your ads</h1>
+                </div>
+                <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap">
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">recent posts</h3>
+                    <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
+                </div>
+                <div class="grid grid-cols-1 mt-3 w-full gap-5">
+                    <div class="flex gap-[30px]">
+                        <img src="images/music.jpg" class="w-[350px] h-[210px]" alt="">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-gray-400 uppercase text-xs"> <span class="text-red-600">LOREM</span> / IPSUM
+                            </p>
+                            <h2 class="text-black font-bold">Lorem ipsum, dolor sit <br> amet consectetur adipisicing
+                                elit. Alias, ipsa?</h2>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <br> Commodi molestias amet laboriosam, odit non maiores ipsum <br> cum exercitationem
+                                ab et,
+                                quisquam officia sint fuga delectus architecto accusamus quas veritatis dicta?
+                            </p>
+                            <div class="flex gap-2 items-center">
+                                <i
+                                    class="fa-solid fa-share bg-gray-200 p-1 border-2 border-black rounded-full text-sm"></i>
+                                <small class="text-gray-500 text-xs">200k+</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <img src="images/football.jpg" class="w-[350px] h-[210px]" alt="">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-gray-400 uppercase text-xs"> <span class="text-red-600">LOREM</span> / IPSUM
+                            </p>
+                            <h2 class="text-black font-bold">Lorem ipsum, dolor sit <br> amet consectetur adipisicing
+                                elit. Alias, ipsa?</h2>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <br> Commodi molestias amet laboriosam, odit non maiores ipsum <br> cum exercitationem
+                                ab et,
+                                quisquam officia sint fuga delectus architecto accusamus quas veritatis dicta?
+                            </p>
+                            <div class="flex gap-2 items-center">
+                                <i
+                                    class="fa-solid fa-share bg-gray-200 p-1 border-2 border-black rounded-full text-sm"></i>
+                                <small class="text-gray-500 text-xs">200k+</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <img src="images/tech.jpg" class="w-[350px] h-[210px]" alt="">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-gray-400 uppercase text-xs"> <span class="text-red-600">LOREM</span> / IPSUM
+                            </p>
+                            <h2 class="text-black font-bold">Lorem ipsum, dolor sit <br> amet consectetur adipisicing
+                                elit. Alias, ipsa?</h2>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <br> Commodi molestias amet laboriosam, odit non maiores ipsum <br> cum exercitationem
+                                ab et,
+                                quisquam officia sint fuga delectus architecto accusamus quas veritatis dicta?
+                            </p>
+                            <div class="flex gap-2 items-center">
+                                <i
+                                    class="fa-solid fa-share bg-gray-200 p-1 border-2 border-black rounded-full text-sm"></i>
+                                <small class="text-gray-500 text-xs">200k+</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-[30px]">
+                        <img src="images/syrian.jpg" class="w-[350px] h-[210px]" alt="">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-gray-400 uppercase text-xs"> <span class="text-red-600">LOREM</span> / IPSUM
+                            </p>
+                            <h2 class="text-black font-bold">Lorem ipsum, dolor sit <br> amet consectetur adipisicing
+                                elit. Alias, ipsa?</h2>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <br> Commodi molestias amet laboriosam, odit non maiores ipsum <br> cum exercitationem
+                                ab et,
+                                quisquam officia sint fuga delectus architecto accusamus quas veritatis dicta?
+                            </p>
+                            <div class="flex gap-2 items-center">
+                                <i
+                                    class="fa-solid fa-share bg-gray-200 p-1 border-2 border-black rounded-full text-sm"></i>
+                                <small class="text-gray-500 text-xs">200k+</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[300px]">
+                <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap">
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">about me</h3>
+                    <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
+                </div>
+                <div class="flex flex-col text-center gap-3 items-center mt-2">
+                    <img src="images/edited.jpeg" width="200px" alt="me" class="rounded-full">
+                    <p class="text-gray-500 font-semibold">As a software engineer, I've embarked on the journey of
+                        creating a blog website, honing my skills and sharing insights with the world. Join me on this
+                        practice-driven adventure!</p>
+                </div>
+                <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap">
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">Follow Us</h3>
+                    <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
+                </div>
+                <div class="w-full divide-y p-2 border-2 rounded mt-2">
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-3 items-center p-1">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p class="text-gray-500 text-sm font-semibold">Instagram</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">1M+ followers</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-3 items-center p-1">
+                            <i class="fa-brands fa-youtube"></i>
+                            <p class="text-gray-500 font-semibold text-sm">You Tube</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">500k+ subscribers</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-3 items-center p-1">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <p class="text-gray-500 text-sm font-semibold">LinkedIn</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">1k+ followers</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex gap-3 items-center p-1">
+                            <i class="fa-brands fa-pinterest"></i>
+                            <p class="text-gray-500 text-sm font-semibold">Pinterest</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-400">5k+ followers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap mb-2">
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">recent posts</h3>
+                    <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
+                </div>
+                <div>
+                    <div class="divide-y border-2 rounded">
+                        <div class="inner">
+                            <div>
+                                <h2 class="text-white font-semibold text-sm">INTO THE GRAFFITI LAND (Kenyan Roads)😎😎‼
+                                </h2>
+                                <p class="text-xs text-gray-800 font-extrabold">Bus from Ongata Rongai Kenya</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-50 p-2">
+                            <h3 class="text-black font-bold uppercase text-sm">how to make Cappuccino without Machines
+                            </h3>
+                            <p class="text-xs text-gray-500">Ever wondered how to do it? <br> Continue reading...</p>
+                        </div>
+                        <div class="bg-gray-50 p-2">
+                            <h3 class="text-black font-bold uppercase text-sm">how to download Euro Truck Simulator 2
+                                (ets2)
+                            </h3>
+                            <p class="text-xs text-gray-500">For windows 10 and above 64-bit <br> 8GB RAM 256GB SSD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap mb-2">
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">You tube</h3>
+                    <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
+                </div>
+                <div class="w-full">
+                    <iframe width="560" class="w-full rounded-xl" height="315"
+                        src="https://www.youtube.com/embed/nn72xd_MkMs?si=zmPaNE6W7ztibn5d" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap mb-2">
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">Today's top picks</h3>
+                    <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
+                </div>
+                <div class="w-full video-background">
+                    <video src="video/porsche.mp4" height="100px" class="rounded-xl" style="width: 100%;" autoplay loop
+                        muted></video>
+                    <div class="content">
+                        <h2 class="text-sm text-white font-bold">Porsche 911 Turbo S</h2>
+                        <p class="text-gray-800 text-xs font-extrabold">3000cc Flat 6 petrol <br> 650HP 800Nm <br>
+                            1640KG Top
+                            Spec $244,850 <br> 0-60 mph 2.6 sec 🤯🤯</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="pl-[8%] pr-[8%] pt-[30px] bg-black mt-[40px]">
+        <div class="flex justify-between mt-5">
+            <div>
+                <h3 class="font-bold">Kisinja Blog.</h3>
+                <br>
+                <br>
+                <p class="text-gray-300 text-xs">&copy; 2024 Kisinja Blog Limited</p>
+            </div>
+            <div>
+                <h3 class="font-bold">About Us</h3>
+                <br>
+                <ul>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Lorem, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Dolor, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Blah Blah</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Home</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Product</h3>
+                <br>
+                <ul>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Lorem, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Dolor, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Blah Blah</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Home</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Contact Us</h3>
+                <br>
+                <p class="text-gray-300 mb-2">kisinjaelvis@gmail.com</p>
+                <p class="text-gray-300 mb-2">+254 713782003</p>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-brands fa-facebook text-white cursor-pointer hover:text-gray-300"></i>
+                    <i class="fa-brands fa-twitter text-white cursor-pointer hover:text-gray-300"></i>
+                    <a href="https:/www.instagram.com/kis__inja/" target="_blank">
+                        <i class="fa-brands fa-instagram text-white cursor-pointer hover:text-gray-300"></i>
+                    </a>
+                    <i class="fa-brands fa-linkedin text-white cursor-pointer hover:text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

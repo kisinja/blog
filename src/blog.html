@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Kisinja Blog.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/b052718160.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    .menu {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <nav
+        class="w-full flex justify-between items-center bg-gray-100 pl-[8%] pr-[8%] pt-[20px] pb-[20px] sticky top-0 z-[10000] transition-all">
+        <div>
+            <a href="index.html" class="font-bold text-xl">Kisinja Blog.</a>
+        </div>
+        <div>
+            <ul class="flex gap-3">
+                <li><a href="index.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Home</a></li>
+                <li><a href="blog.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Blog</a></li>
+                <li><a href="#" class="text-sm font-semibold hover:text-gray-300 transition-all">Shop</a></li>
+                <li><a href="#" class="text-sm font-semibold hover:text-gray-300 transition-all">Contact</a></li>
+            </ul>
+        </div>
+        <div class="flex gap-3 items-center">
+            <img src="images/edited.jpeg" alt="profile pic" style="border-radius: 50%; width: 30px; height: 30px;"
+                class="rounded-full focus:ring cursor-pointer">
+            <p class="text-sm font-semibold cursor-pointer account">
+                Account
+            </p>
+        </div>
+        <div class="absolute right-[90px] top-[60px] w-[200px] p-3 bg-white rounded-2xl menu">
+            <ul class="flex flex-col gap-2">
+                <li>
+                    <a href="profile.html" id="menu-links"
+                        class="text-gray-500 text-sm capitalize hover:text-black">your
+                        profile</a>
+                </li>
+                <li>
+                    <a href="profile.html" id="menu-links"
+                        class="text-gray-500 text-sm capitalize hover:text-black">settings</a>
+                </li>
+                <li>
+                    <a href="profile.html" id="menu-links"
+                        class="text-gray-500 text-sm capitalize hover:text-black">logout</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <header>
+        <div class="w-full flex justify-between items-center pl-[8%] pr-[8%] pt-[20px] pb-[20px]">
+            <div>
+                <h1 class="font-semibold text-2xl">Blog.</h1>
+            </div>
+            <div>
+                <p class="text-gray-300 uppercase">Home / Blog</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gray-100 pl-[8%] pr-[8%]">
+        <div class="container pt-[30px] flex justify-between pb-[30px]">
+            <div class="flex flex-col gap-[40px]">
+                <div class="relative w-[350px]">
+                    <input type="text" placeholder="Search"
+                        class="p-2 rounded-[40px] w-full shadow-sm outline-none focus:ring-2">
+                    <i class="fa-solid fa-magnifying-glass absolute top-3 right-2"></i>
+                </div>
+                <div class=" w-[350px]">
+                    <ul class="list-group rounded-xl w-full">
+                        <h2 class="font-bold list-group-item pb-4 bg-gray-200 underline">Categories</h2>
+                        <li
+                            class="list-group-item bg-gray-200 text-sm font-semibold cursor-pointer hover:bg-white transition-all">
+                            Culture</li>
+                        <li
+                            class="list-group-item bg-gray-200 text-sm font-semibold cursor-pointer hover:bg-white transition-all">
+                            Creativity</li>
+                        <li
+                            class="list-group-item bg-gray-200 text-sm font-semibold cursor-pointer hover:bg-white transition-all">
+                            Food
+                        </li>
+                        <li
+                            class="list-group-item bg-gray-200 text-sm font-semibold cursor-pointer hover:bg-white transition-all">
+                            Travel</li>
+                        <li
+                            class="list-group-item bg-gray-200 text-sm font-semibold cursor-pointer hover:bg-white transition-all">
+                            Humor</li>
+                        <li
+                            class="list-group-item bg-gray-200 text-sm font-semibold cursor-pointer hover:bg-white transition-all">
+                            Music</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3 p-4 rounded-xl bg-gray-200 w-[350px] divide-y-8">
+                    <h2 class="font-bold">Top Posts</h2>
+                    <div class="flex gap-3 cursor-pointer hover:bg-white p-2 hover:rounded-[8px] transition-all">
+                        <div>
+                            <h1 class="text-2xl font-bold">1</h1>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="font-bold text-xs">Lorem ipsum dolor sit <br> amet consectetur adipisicing.</p>
+                            <p class="text-xs text-gray-500">FOOD TRAVEL - NOV 11, 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 cursor-pointer hover:bg-white p-2 hover:rounded-[8px] transition-all">
+                        <div>
+                            <h1 class="text-2xl font-bold">2</h1>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="font-bold text-xs">Lorem ipsum dolor sit <br> amet consectetur adipisicing.</p>
+                            <p class="text-xs text-gray-500">SPORTS ENTERTAINMENT - NOV 11, 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 cursor-pointer hover:bg-white p-2 hover:rounded-[8px] transition-all">
+                        <div>
+                            <h1 class="text-2xl font-bold">3</h1>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="font-bold text-xs">Lorem ipsum dolor sit <br> amet consectetur adipisicing.</p>
+                            <p class="text-xs text-gray-500">SCIENCE TECHNOLOGY - NOV 11, 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 cursor-pointer hover:bg-white p-2 hover:rounded-[8px] transition-all">
+                        <div>
+                            <h1 class="text-2xl font-bold">4</h1>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="font-bold text-xs">Lorem ipsum dolor sit <br> amet consectetur adipisicing.</p>
+                            <p class="text-xs text-gray-500">LIFESTYLE TRAVEL - NOV 11, 2023</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 cursor-pointer hover:bg-white p-2 hover:rounded-[8px] transition-all">
+                        <div>
+                            <h1 class="text-2xl font-bold">5</h1>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <p class="font-bold text-xs">Lorem ipsum dolor sit <br> amet consectetur adipisicing.</p>
+                            <p class="text-xs text-gray-500">FOOD TRAVEL - NOV 11, 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-[350px] pb-[30px]">
+                    <h2 class="font-bold">Instagram</h2>
+                    <div class="grid grid-cols-3 w-full">
+                        <img src="images/music.jpg" alt="" class="w-20 h-20 m-1">
+                        <a href="https:/www.instagram.com/kis__inja/" target="_blank">
+                            <img src="images/edited.jpeg" alt="" class="w-20 h-20 m-1">
+                        </a>
+                        <img src="images/matatu.jpg" alt="" class="w-20 h-20 m-1">
+                        <img src="images/football.jpg" alt="" class="w-20 h-20 m-1">
+                        <img src="images/ufc.jpg" alt="" class="w-20 h-20 m-1">
+                        <img src="images/syrian.jpg" alt="" class="w-20 h-20 m-1">
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="card bg-white p-2 cursor-pointer" style="width: 18rem; height: fit-content;"
+                    title="Read more">
+                    <img src="images/syrian.jpg" class="card-img-top" alt="blog">
+                    <h5 class="text-gray-300 m-1">LIFESTYLE, FOOD - DEC 12, 2023</h5>
+                    <p class="font-semibold m-1 underline italic">SYRIAN CUISINE</p>
+                    <p class="card-text ml-1">Syrian cuisine is a delightful fusion of Middle Eastern flavors, blending
+                        influences from Mediterranean, Turkish, and Persian culinary traditions. Characterized by its
+                        bold spices, fragrant herbs, and abundance of fresh produce, Syrian dishes offer a tantalizing
+                        journey for the taste bud...</p>
+                </div>
+                <div class="card bg-white p-2 cursor-pointer" style="width: 18rem; height: fit-content;"
+                    title="Read more">
+                    <img src="images/tech.jpg" class="card-img-top" alt="blog">
+                    <h5 class="text-gray-300 m-1">SCIENCE, TECHNOLOGY - JAN 4, 2024</h5>
+                    <p class="font-semibold m-1 underline italic">MODERN DAY TECHNOLOGY</p>
+                    <p class="card-text ml-1">Technology has become an indispensable part of our daily lives,
+                        revolutionizing
+                        the way we communicate, work, and interact with the world around us. From the advent of the
+                        internet to the rise of smartphones and artificial intelligence, advancements in technology
+                        continue to shape and redefine the way we live...</p>
+                </div>
+                <div class="card bg-white p-2 cursor-pointer" style="width: 18rem; height: fit-content;"
+                    title="Read more">
+                    <img src="images/ufc.jpg" class="card-img-top" alt="blog">
+                    <h5 class="text-gray-300 m-1">ENTERTAINMENT, UFC - JAN 28, 2024</h5>
+                    <p class="font-semibold m-1 underline italic">THE ULTIMATE FIGHTING CHAMPIONSHIP</p>
+                    <p class="card-text ml-1">UFC events feature a mix of championship bouts, highly anticipated
+                        matchups,
+                        and rising stars looking to make a name for themselves. Fighters like Conor McGregor, Jon Jones,
+                        and Amanda Nunes have become household names, captivating audiences with their skill, charisma,
+                        and determination...</p>
+                </div>
+                <div class="card bg-white p-2 cursor-pointer" style="width: 18rem; height: fit-content;"
+                    title="Read more">
+                    <img src="images/football.jpg" class="card-img-top" alt="blog">
+                    <h5 class="text-gray-300 m-1">ENTERTAINMENT, FOOTBALL - SEP 25, 2023</h5>
+                    <p class="font-semibold m-1 underline italic">THE CARABAO CUP 2024</p>
+                    <p class="card-text ml-1">Each year, teams from the English Premier League, English Football League
+                        Championship, League One, and League Two, as well as some invited teams from lower leagues,
+                        battle it out in a knockout format. The competition kicks off with early-round fixtures,
+                        gradually narrowing down the field until only two teams remain to compete in the final...</p>
+                </div>
+                <div class="card bg-white p-2 cursor-pointer" style="width: 18rem; height: fit-content;"
+                    title="Read more">
+                    <img src="images/music.jpg" class="card-img-top" alt="blog">
+                    <h5 class="text-gray-300 m-1">ENTERTAINMENT, MUSIC - JAN 13, 2024</h5>
+                    <p class="font-semibold m-1 underline italic">WHY PEOPLE LOVE 80'S BALLAD MUSIC</p>
+                    <p class="card-text ml-1">In the vibrant tapestry of music history, the 1980s emerged as a dynamic
+                        era
+                        for soul music, characterized by a fusion of traditional soul sounds with the evolving trends of
+                        the time. From the infectious grooves of Michael Jackson to the smooth vocals of Luther
+                        Vandross, the decade was a melting pot of creativity and innovation... </p>
+                </div>
+                <div class="card bg-white p-2 cursor-pointer" style="width: 18rem; height: fit-content;"
+                    title="Read more">
+                    <img src="images/matatu.jpg" class="card-img-top" alt="blog">
+                    <h5 class="text-gray-300 m-1">LIFESTYLE, CULTURE - AUG 14, 2024</h5>
+                    <p class="font-semibold m-1 underline italic">INTO THE GRAFFITI LAND (Kenyan Roads)😎😎‼</p>
+                    <p class="card-text ml-1">
+                        In Kenya, matatus are more than just a mode of transportation; they're a vibrant expression of
+                        culture and creativity on wheels. These minibus taxis, often adorned with flashy graffiti,
+                        vibrant colors, and customized designs, are a ubiquitous sight on the bustling streets of
+                        Nairobi and beyond...</p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="flex gap-2 justify-center ml-[100px] mt-5">
+        <div class="p-3 shadow-lg rounded-md m-2 cursor-pointer inline-block bg-purple-900 text-white">1</div>
+        <div class="bg-white p-3 shadow-md rounded-md m-2 inline-block  cursor-pointer">2</div>
+        <div class="bg-white p-3 shadow-md rounded-md m-2 inline-block  cursor-pointer">3</div>
+        <div class="bg-white p-3 shadow-md rounded-md m-2 inline-block  cursor-pointer">4</div>
+        <div class="bg-white p-3 shadow-md rounded-md m-2 inline-block  cursor-pointer"> <i
+                class="fa-solid fa-arrow-right"></i> </div>
+    </div>
+
+    <footer class="pl-[8%] pr-[8%] pt-[30px] bg-black mt-[40px]">
+        <div class="flex justify-between mt-5">
+            <div>
+                <h3 class="font-bold">Kisinja Blog.</h3>
+                <br>
+                <br>
+                <p class="text-gray-300 text-xs">&copy; 2024 Kisinja Blog Limited</p>
+            </div>
+            <div>
+                <h3 class="font-bold">About Us</h3>
+                <br>
+                <ul>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Lorem, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Dolor, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Blah Blah</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Home</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Product</h3>
+                <br>
+                <ul>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Lorem, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Dolor, ipsum.</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Blah Blah</li>
+                    <li class="text-gray-400 cursor-pointer hover:text-gray-300 transition-all">Home</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Contact Us</h3>
+                <br>
+                <p class="text-gray-300 mb-2">kisinjaelvis@gmail.com</p>
+                <p class="text-gray-300 mb-2">+254 713782003</p>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-brands fa-facebook text-white cursor-pointer hover:text-gray-300"></i>
+                    <i class="fa-brands fa-twitter text-white cursor-pointer hover:text-gray-300"></i>
+                    <a href="https:/www.instagram.com/kis__inja/" target="_blank">
+                        <i class="fa-brands fa-instagram text-white cursor-pointer hover:text-gray-300"></i>
+                    </a>
+                    <i class="fa-brands fa-linkedin text-white cursor-pointer hover:text-gray-300"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
