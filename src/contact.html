@@ -4,26 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile | Kisinja Blog</title>
-    <link rel="stylesheet" href="output.css">
+    <title>Contact | Kisinja Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="output.css">
     <script src="https://kit.fontawesome.com/b052718160.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
-
-<style>
-    .menu {
-        display: none;
-    }
-
-    .show {
-        display: block;
-    }
-</style>
 
 <body>
 
@@ -37,7 +23,8 @@
                 <li><a href="index.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Home</a></li>
                 <li><a href="blog.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Blog</a></li>
                 <li><a href="#" class="text-sm font-semibold hover:text-gray-300 transition-all">Shop</a></li>
-                <li><a href="contact.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Contact</a></li>
+                <li><a href="contact.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="flex gap-3 items-center">
@@ -47,7 +34,7 @@
                 Account
             </p>
         </div>
-        <div class="absolute right-[90px] top-[60px] w-[200px] p-3 bg-white rounded-2xl menu">
+        <div class="absolute hidden right-[90px] top-[60px] w-[200px] p-3 bg-white rounded-2xl menu">
             <ul class="flex flex-col gap-2">
                 <li>
                     <a href="profile.html" id="menu-links"
@@ -67,91 +54,74 @@
         </div>
     </nav>
 
-    <section class="pl-[8%] pr-[8%] bg-gray-100 pt-[30px] pb-[30px]">
-        <div class="flex gap-[100px]">
-            <div class="w-[300px]">
-                <h3 class="font-bold text-lg mb-5">Your Profile</h3>
+    <section class="bg-gray-100 pl-[8%] pr-[8%] pt-[60px] pb-[30px]">
+        <div class="flex justify-between">
+            <div class="w-[600px] flex flex-col gap-[30px]">
+                <div class="form-group w-full flex gap-[30px]">
+                    <input type="email" class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                        placeholder="Email" id="">
+                    <input type="tel" class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                        placeholder="Phone" id="">
+                </div>
+                <div class="form-group w-full">
+                    <input type="text" class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                        placeholder="Name" id="">
+                </div>
                 <div>
-                    <ul class="flex flex-col gap-4">
-                        <li>
-                            <a href="" class="flex gap-2 items-center">
-                                <i class="fa-solid fa-user text-black"></i>
-                                <p class="font-semibold">User info</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="flex gap-2 items-center">
-                                <i class="fa-solid fa-heart text-gray-500"></i>
-                                <p class="text-gray-500">Favorites</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="flex gap-2 items-center">
-                                <i class="fa-solid fa-star text-gray-500"></i>
-                                <p class="text-gray-500">Watchlist</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="flex gap-2 items-center">
-                                <i class="fa-solid fa-gear text-gray-500"></i>
-                                <p class="text-gray-500">Settings</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="flex gap-2 items-center">
-                                <i class="fa-solid fa-bell text-gray-500"></i>
-                                <p class="text-gray-500">Notifications</p>
-                            </a>
-                        </li>
-                    </ul>
+                    <textarea placeholder="Leave a message..." id="" cols="30"
+                        class="p-3 rounded-[40px] bg-gray-300 text-sm w-full form-control" rows="10"
+                        style="resize: none;"></textarea>
+                </div>
+                <div>
+                    <a href="#" class="p-2 bg-blue-700 text-white rounded-" 40px="">Send Message</a>
                 </div>
             </div>
-
-            <div class="flex flex-col gap-[50px] w-[700px]">
-                <div class="flex gap-6 items-center relative">
-                    <img src="images/edited.jpeg" class="rounded-full" height="60px" width="60px" alt="">
-                    <i class="fa-solid fa-pen-to-square absolute text-red-600 right-[90%] top-[65%] cursor-pointer"       
-                        title="Edit profile picture"></i>
-                    <div class="flex flex-col gap-2">
-                        <h3 class="font-bold">Elvis Kisinja</h3>
-                        <p class="text-gray-500 text-xs">Nairobi, Kenya</p>
+            <div class="w-[400px]">
+                <div class="bg-white rounded-[40px] p-3 flex flex-col gap-[30px]">
+                    <h1>Our NewsLetters</h1>
+                    <p class="text-gray-600 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+                        quisquam doloribus vitae natus, distinctio velit minima neque porro hic laudantium, eligendi
+                        suscipit nulla omnis repudiandae harum sint tempore fugiat eius.</p>
+                    <div>
+                        <input type="email"
+                            class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                            placeholder="Email" id="">
+                    </div>
+                    <div class="w-full flex justify-center">
+                        <a href="#" class="bg-black text-white text-sm p-2 rounded-[40px]">Submit form</a>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-[60px]">
-                    <div class="form-group">
-                        <label for="">Name</label>
-                        <input type="text" value="Elvis" id="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Full Name</label>
-                        <input type="text" value="Elvis Kisinja" id="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Email Address</label>
-                        <input type="email" value="kisinjaelvis@gmail.com" id="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Phone Number</label>
-                        <input type="tel" value="+254713782003" id="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Location</label>
-                        <input type="text" placeholder="e.g. Nairobi, Kenya" id="" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Postal Code</label>
-                        <input type="text" value="01000" id="" class="form-control">
-                    </div>
-                </div>
-                <a href=""
-                    class="text-center text-white p-2 rounded-xl bg-blue-500 hover:bg-blue-600 transition-all">Save
-                    Changes</a>
             </div>
         </div>
-    </section>
-    <!-- FOOTER SECTION -->
 
-    <footer class="pl-[8%] pr-[8%] pt-[30px] bg-black mt-[40px]">
+    </section>
+
+    <section class="bg-black pl-[8%] pr-[8%] pt-[60px] pb-[30px]">
+        <h1 style="font-size: 50px;" class="text-white font-bold text-center mb-[20px]">Our Location</h1>
+        <div class="w-full rounded-[40px]">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12035.145895985675!2d36.746493048201536!3d-1.2321150764072197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f197c6a68a955%3A0xecaa4c29c8a5da0f!2sNew%20Kitisuru%20Estate%20176!5e0!3m2!1sen!2ske!4v1709471562831!5m2!1sen!2ske"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="w-full rounded-[40px]"></iframe>
+        </div>
+        <div id="element">
+            
+        </div>
+    </section>
+
+
+
+    <style>
+        #element {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0;
+        }
+    </style>
+
+    <footer class="pl-[8%] pr-[8%] pt-[30px] bg-black mt-[40px] pb-[30px]">
         <div class="flex justify-between mt-5">
             <div>
                 <h3 class="font-bold">Kisinja Blog.</h3>
@@ -195,7 +165,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

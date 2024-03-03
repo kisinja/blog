@@ -28,3 +28,14 @@ window.onscroll = () => {
         navBar.style.borderBottom = '2px solid #e0e0e0';
     }
 }
+
+document.addEventListener('mousemove', moveElement);
+
+function moveElement(e) {
+    const element = document.getElementById('element');
+    let mouseX = e.clientX;
+    let mouseY = e.clientY;
+
+    element.style.left = mouseX + 'px';
+    element.style.top = mouseY + 'px';
+}
