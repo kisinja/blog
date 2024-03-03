@@ -31,10 +31,11 @@ window.onscroll = () => {
     }
 }
 
+const element = document.getElementById('element');
+element.style.zIndex = 100000000;
 document.addEventListener('mousemove', moveElement);
 
 function moveElement(e) {
-    const element = document.getElementById('element');
     let mouseX = e.clientX;
     let mouseY = e.clientY;
 
