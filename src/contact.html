@@ -9,6 +9,24 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="output.css">
     <script src="https://kit.fontawesome.com/b052718160.js" crossorigin="anonymous"></script>
+
+    <style>
+        @media (min-width:500px) and (max-width:768px) {
+            .content-2 {
+                flex-direction: column;
+                gap: 50px;
+                width: 100%;
+            }
+
+            .form-cont {
+                width: 100%;
+            }
+
+            .newsletter {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -54,37 +72,52 @@
         </div>
     </nav>
 
+    <center class="m-4 mt-4">
+        <h1 class="text-black text-center font-bold" style="font-size: 50px;">Contact Us</h1>
+        <p class="text-gray-600 text-md">We'll get back to you as soon as possible .</p>
+    </center>
+
     <section class="bg-gray-100 pl-[8%] pr-[8%] pt-[60px] pb-[30px]">
-        <div class="flex justify-between">
-            <div class="w-[600px] flex flex-col gap-[30px]">
+        <div class="flex justify-between content-2">
+            <div class="w-[600px] flex flex-col gap-[30px] form-cont">
                 <div class="form-group w-full flex gap-[30px]">
-                    <input type="email" class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                    <input type="email" class="form-control p-2 bg-gray-200 text-gray-600 text-sm rounded-[40px] w-full"
                         placeholder="Email" id="">
-                    <input type="tel" class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                    <input type="tel" class="form-control p-2 bg-gray-200 text-gray-600 text-sm rounded-[40px] w-full"
                         placeholder="Phone" id="">
                 </div>
                 <div class="form-group w-full">
-                    <input type="text" class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                    <input type="text" class="form-control p-2 bg-gray-200 text-gray-600 text-sm rounded-[40px] w-full"
                         placeholder="Name" id="">
                 </div>
                 <div>
                     <textarea placeholder="Leave a message..." id="" cols="30"
-                        class="p-3 rounded-[40px] bg-gray-300 text-sm w-full form-control" rows="10"
+                        class="p-3 rounded-[40px] bg-gray-200 text-sm w-full form-control" rows="10"
                         style="resize: none;"></textarea>
                 </div>
                 <div>
                     <a href="#" class="p-2 bg-blue-700 text-white rounded-" 40px="">Send Message</a>
                 </div>
             </div>
-            <div class="w-[400px]">
+            <div class="w-[400px] newsletter">
                 <div class="bg-white rounded-[40px] p-3 flex flex-col gap-[30px]">
-                    <h1>Our NewsLetters</h1>
-                    <p class="text-gray-600 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                        quisquam doloribus vitae natus, distinctio velit minima neque porro hic laudantium, eligendi
-                        suscipit nulla omnis repudiandae harum sint tempore fugiat eius.</p>
+                    <h1 class="font-semibold text-lg">Our NewsLetters</h1>
+                    <p class="text-gray-400 text-sm">Stay ahead of the curve with our exclusive newsletter! Subscribe
+                        now to receive the latest updates, insightful articles, and valuable resources directly to your
+                        inbox. Join our community of like-minded individuals passionate about day to day gossip and
+                        news about => ( <img src="images/kenya.png" style="max-width: 20px; display:inline;"
+                            class="h-auto" alt="">
+                        <img src="images/kenya.png" style="max-width: 20px; display:inline;" class="h-auto" alt=""> )
+                        and
+                        never
+                        miss out on the
+                        latest
+                        trends and insights. Sign up today for a dose of
+                        inspiration delivered right to you!
+                    </p>
                     <div>
                         <input type="email"
-                            class="form-control p-2 bg-gray-300 text-gray-600 text-sm rounded-[40px] w-full"
+                            class="form-control p-2 bg-gray-200 text-gray-600 text-sm rounded-[40px] w-full"
                             placeholder="Email" id="">
                     </div>
                     <div class="w-full flex justify-center">
@@ -105,7 +138,7 @@
                 referrerpolicy="no-referrer-when-downgrade" class="w-full rounded-[40px]"></iframe>
         </div>
         <div id="element">
-            
+
         </div>
     </section>
 
