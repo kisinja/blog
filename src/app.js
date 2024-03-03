@@ -7,6 +7,8 @@ console.log(accBtn);
 console.log(menu);
 console.log(links);
 
+accBtn.setAttribute('title', 'account');
+
 accBtn.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
@@ -34,7 +36,7 @@ document.addEventListener('mousemove', moveElement);
 function moveElement(e) {
     const element = document.getElementById('element');
     let mouseX = e.clientX;
-    let mouseY = e.clientY; 
+    let mouseY = e.clientY;
 
     element.style.left = mouseX + 'px';
     element.style.top = mouseY + 'px';

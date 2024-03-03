@@ -37,30 +37,35 @@
                 <li><a href="index.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Home</a></li>
                 <li><a href="blog.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Blog</a></li>
                 <li><a href="#" class="text-sm font-semibold hover:text-gray-300 transition-all">Shop</a></li>
-                <li><a href="contact.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Contact</a></li>
+                <li><a href="contact.html" class="text-sm font-semibold hover:text-gray-300 transition-all">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="flex gap-3 items-center">
             <img src="images/edited.jpeg" alt="profile pic" style="border-radius: 50%; width: 30px; height: 30px;"
                 class="rounded-full focus:ring cursor-pointer">
-            <p class="text-sm font-semibold cursor-pointer account">
-                Account
-            </p>
+            <div>
+                <p class="text-sm font-semibold cursor-pointer">
+                    Account <img src="images/down-arrow.svg" width="10px" class="account" style="display: inline;"
+                        alt="menu icon">
+                </p>
+                <p class="text-xs font-normal cursor-pointer text-gray-300">(Elvis Kisinja)</p>
+            </div>
         </div>
         <div class="absolute right-[90px] top-[60px] w-[200px] p-3 bg-white rounded-2xl menu">
             <ul class="flex flex-col gap-2">
                 <li>
-                    <a href="profile.html" id="menu-links"
-                        class="text-gray-500 text-sm capitalize hover:text-black">your
-                        profile</a>
+                    <a href="profile.html" id="menu-links" class="text-gray-500 text-sm capitalize hover:text-black"><i
+                            class="fa-solid fa-user text-xs mr-4">your
+                            profile</i> </a>
                 </li>
                 <li>
-                    <a href="profile.html" id="menu-links"
-                        class="text-gray-500 text-sm capitalize hover:text-black">settings</a>
+                    <a href="profile.html" id="menu-links" class="text-gray-500 text-sm capitalize hover:text-black"><i
+                            class="fa-solid fa-gear text-xs mr-4"></i> settings</a>
                 </li>
                 <li>
-                    <a href="profile.html" id="menu-links"
-                        class="text-gray-500 text-sm capitalize hover:text-black">logout</a>
+                    <a href="profile.html" id="menu-links" class="text-gray-500 text-sm capitalize hover:text-black"><i
+                            class="fa-solid fa-right-from-bracket text-xs mr-4"></i> logout</a>
                 </li>
             </ul>
 
@@ -124,6 +129,15 @@
             top: 60%;
             left: 5px;
             z-index: 1;
+        }
+
+        #element {
+            width: 20px;
+            height: 20px;
+            background: red;
+            position: absolute;
+            top: 0;
+            border-radius: 50%;
         }
     </style>
 
@@ -307,7 +321,8 @@
                     </div>
                 </div>
                 <div class="flex gap-1 w-full mt-3 items-center whitespace-nowrap mb-2">
-                    <h3 class="uppercase text-black font-semibold text-xs mr-2">You tube</h3>
+                    <h3 class="uppercase text-black font-semibold text-xs mr-2">You tube <i
+                            class="fa-brands fa-youtube"></i></h3>
                     <div class="w-[500px] h-[2px] rounded bg-gray-500"></div>
                 </div>
                 <div class="w-full">
@@ -332,6 +347,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="element">
+
         </div>
     </section>
 
