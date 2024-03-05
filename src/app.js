@@ -42,3 +42,17 @@ function moveElement(e) {
     element.style.left = mouseX + 'px';
     element.style.top = mouseY + 'px';
 }
+
+const mobileMenu = document.querySelector(".mobile-menu");
+const hamburger = document.querySelector('.hamburger');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle('show-menu');
+});
+
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.toggle('show-menu');
+    })
+});
