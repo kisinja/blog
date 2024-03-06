@@ -56,3 +56,7 @@ mobileLinks.forEach(link => {
         mobileMenu.classList.toggle('show-menu');
     })
 });
+
+const logo = document.getElementsByClassName('logo');
+
+logo.style.color = 'red';
